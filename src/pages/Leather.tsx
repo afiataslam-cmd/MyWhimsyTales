@@ -25,7 +25,7 @@ export const Leather: React.FC = () => {
   }, []);
 
   return (
-    <div className="pt-20 pb-24">
+    <div className="pt-24 pb-24">
       <section className="bg-card/10 py-20 mb-16">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <span className="text-xs uppercase tracking-[0.5em] text-accent mb-4 block">Hand-Stitched Artistry</span>
