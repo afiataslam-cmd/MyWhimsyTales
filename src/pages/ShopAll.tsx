@@ -3,26 +3,84 @@ import { Product } from '../types';
 import { ProductCard } from '../components/ProductCard';
 import { motion, AnimatePresence } from 'motion/react';
 
-export const ShopAll: React.FC = () => {
-  const [products, setProducts] = useState<Product[]>([]);
-  const [loading, setLoading] = useState(true);
+const products = [
+    {
+      id: "1",
+      name: "The Alchemist's Journal",
+      price: 45.0,
+      category: "Leather",
+      image: "https://res.cloudinary.com/dqbn9syr3/image/upload/f_auto,q_auto/IMG_6148_yi2yeq",
+      rating: 4.8,
+      description: "Hand-stitched full-grain leather journal with aged parchment paper."
+    },
+    {
+      id: "2",
+      name: "Midnight Moss Crochet Shawl",
+      price: 65.0,
+      category: "Crochet",
+      image: "https://res.cloudinary.com/dqbn9syr3/image/upload/v1774472426/IMG_6144_jwot3d.jpg",
+      rating: 4.9,
+      description: "Intricately woven shawl made from premium merino wool."
+    },
+    {
+      id: "3",
+      name: "Vintage Traveler's Notebook",
+      price: 38.0,
+      category: "Leather",
+      image: "https://images.unsplash.com/photo-1517842645767-c639042777db?q=80&w=1000&auto=format&fit=crop",
+      rating: 4.7,
+      description: "Compact leather notebook with refillable inserts and brass hardware."
+    },
+    {
+      id: "4",
+      name: "Sage Fern Amigurumi",
+      price: 25.0,
+      category: "Crochet",
+      image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=1000&auto=format&fit=crop",
+      rating: 5.0,
+      description: "Adorable hand-crocheted forest spirit companion."
+    },
+    {
+      id: "5",
+      name: "Embossed Grimoire",
+      price: 85.0,
+      category: "Leather",
+      image: "https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?q=80&w=1000&auto=format&fit=crop",
+      rating: 4.9,
+      description: "Large format leather book with intricate floral embossing."
+    },
+    {
+      id: "6",
+      name: "Autumn Ember Beanie",
+      price: 30.0,
+      category: "Crochet",
+      image: "https://images.unsplash.com/photo-1575425186775-b8de9fa227e2?q=80&w=1000&auto=format&fit=crop",
+      rating: 4.6,
+      description: "Warm and cozy chunky knit beanie in burnt orange."
+    }
+  ];
 
-  useEffect(() => {
-    const fetchProducts = async () => {
-      setLoading(true);
-      try {
-        const res = await fetch('/api/products');
-        const data = await res.json();
-        setProducts(data);
-      } catch (err) {
-        console.error("Failed to fetch products", err);
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchProducts();
-    window.scrollTo(0, 0);
-  }, []);
+
+export const ShopAll: React.FC = () => {
+  // const [products, setProducts] = useState<Product[]>([]);
+  // const [loading, setLoading] = useState(true);
+
+  // useEffect(() => {
+  //   const fetchProducts = async () => {
+  //     setLoading(true);
+  //     try {
+  //       const res = await fetch('/api/products');
+  //       const data = await res.json();
+  //       setProducts(data);
+  //     } catch (err) {
+  //       console.error("Failed to fetch products", err);
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
+  //   fetchProducts();
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   return (
     <div className="pt-20 pb-24">
@@ -34,7 +92,7 @@ export const ShopAll: React.FC = () => {
       </section>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {loading ? (
+        {/* {loading ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
             {[...Array(8)].map((_, i) => (
               <div key={i} className="animate-pulse">
@@ -44,7 +102,7 @@ export const ShopAll: React.FC = () => {
               </div>
             ))}
           </div>
-        ) : (
+        ) : ( */}
           <motion.div 
             layout
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12"
@@ -55,7 +113,7 @@ export const ShopAll: React.FC = () => {
               ))}
             </AnimatePresence>
           </motion.div>
-        )}
+        {/* )} */}
       </div>
     </div>
   );
