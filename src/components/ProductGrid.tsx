@@ -6,19 +6,19 @@ import { motion, AnimatePresence } from 'motion/react';
 const products = [
     {
       id: "1",
-      name: "The Alchemist's Journal",
+      name: "Kuromi Plushie",
       price: 45.0,
-      category: "Leather",
+      category: "Crochet",
       image: "https://res.cloudinary.com/dqbn9syr3/image/upload/f_auto,q_auto/IMG_6148_yi2yeq",
       rating: 4.8,
       description: "Hand-stitched full-grain leather journal with aged parchment paper."
     },
     {
       id: "2",
-      name: "Midnight Moss Crochet Shawl",
+      name: "Crochet Rose Bag",
       price: 65.0,
       category: "Crochet",
-      image: "https://res.cloudinary.com/dqbn9syr3/image/upload/v1774472426/IMG_6144_jwot3d.jpg",
+      image: "https://res.cloudinary.com/dqbn9syr3/image/upload/v1774472427/IMG_6147_zdkszd.jpg",
       rating: 4.9,
       description: "Intricately woven shawl made from premium merino wool."
     },
@@ -27,7 +27,7 @@ const products = [
       name: "Vintage Traveler's Notebook",
       price: 38.0,
       category: "Leather",
-      image: "https://images.unsplash.com/photo-1517842645767-c639042777db?q=80&w=1000&auto=format&fit=crop",
+      image: "https://res.cloudinary.com/dqbn9syr3/image/upload/v1774474497/Screenshot_2026-03-26_023251_kmmnxi.png",
       rating: 4.7,
       description: "Compact leather notebook with refillable inserts and brass hardware."
     },
@@ -51,10 +51,10 @@ const products = [
     },
     {
       id: "6",
-      name: "Autumn Ember Beanie",
+      name: "Custom Initial Journal",
       price: 30.0,
-      category: "Crochet",
-      image: "https://images.unsplash.com/photo-1575425186775-b8de9fa227e2?q=80&w=1000&auto=format&fit=crop",
+      category: "Leather",
+      image: "https://res.cloudinary.com/dqbn9syr3/image/upload/v1774476175/Screenshot_2026-03-26_030232_mxudaa.png",
       rating: 4.6,
       description: "Warm and cozy chunky knit beanie in burnt orange."
     }
