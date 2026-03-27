@@ -42,10 +42,10 @@ const products = [
     },
     {
       id: "5",
-      name: "Embossed Grimoire",
+      name: "Crochet rose bag (Blue)",
       price: 85.0,
-      category: "Leather",
-      image: "https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?q=80&w=1000&auto=format&fit=crop",
+      category: "Crochet",
+      image: "https://res.cloudinary.com/dqbn9syr3/image/upload/v1774472427/IMG_6146_anpkof.jpg",
       rating: 4.9,
       description: "Large format leather book with intricate floral embossing."
     },
