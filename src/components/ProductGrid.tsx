@@ -33,10 +33,10 @@ const products = [
     },
     {
       id: "4",
-      name: "Sage Fern Amigurumi",
+      name: "Leather Journal",
       price: 25.0,
-      category: "Crochet",
-      image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=1000&auto=format&fit=crop",
+      category: "Leather",
+      image: "https://res.cloudinary.com/dqbn9syr3/image/upload/v1774474497/Screenshot_2026-03-26_022844_ggpjfi.png",
       rating: 5.0,
       description: "Adorable hand-crocheted forest spirit companion."
     },
